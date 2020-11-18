@@ -1,0 +1,2 @@
+There are two types of artifacts template and binary. 
+The ARM template has a template folder that contains template artifacts inside which binary artifacts version resides. Binary artifacts contain some services that consist of template and parameter pair of ARM template for creating required resources.
