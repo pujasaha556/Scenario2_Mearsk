@@ -1,0 +1,2 @@
+As ARM templates are json based file so we can use visual studio code or any text editor to create this and for storing those templates we can use any of the below version control systems:
+GitHub, Azure Git repo, Subversion, Bitbucket cloud, GitHub enterprise server
