@@ -1,0 +1,11 @@
+ Since it’s an ARM template deployment so here is the steps below for pipeline creation:
+a) Go to my project and click on the pipeline and click on create pipeline, then select classic editor or any other mode from where we need to fetch our stored ARM template.
+b) create an empty job and there need to create our task according to our deployment resources. So, in cloud everything is available in marketplace in the search box for any type of language of code deployment. We can also define deferent agent there or put the default agent. So, we have to add task ARM template deployment from marketplace under which we need to add scope, subscription, resource group name, region or location. Also, we need to map template and parameter file and deployment strategy etc.
+
+c) In the variable section we can add key vault via linking groups from where we stored secret values and keep parameterized in ARM template parameter file.
+d) In the trigger section we need to enable continuous integration for parallel builds one after another through automated pipeline.
+e) Also, we can add more tasks according to our requirement like artifacts publish or copying artifacts etc
+f) Once everything configures properly click on queue in upper right corner which will start the build.
+g) For creating release pipeline we need to go to release section and create new pipeline and empty job where we need to map the build artifacts and define the stages so that once build has been triggered it will automatically deploying to other environments via stages one by one as defined in release pipeline.
+
+We need to add different stages and define environment and branching strategy according to business need. So, these are process and steps defined briefly above to create automated deployment pipeline.
